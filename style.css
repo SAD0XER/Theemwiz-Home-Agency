@@ -1,0 +1,36 @@
+body {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    background: #28293E;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0 5rem;
+    background: #28293E;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 3.5rem;
+    font-size: small;
+    color: white;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+}
+
+.contact-btn a {
+    color: white;
+    padding: 0.9rem 2rem 0.75rem;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+}
