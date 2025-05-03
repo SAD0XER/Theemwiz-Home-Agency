@@ -23,61 +23,106 @@
 
 <body>
     <main>
-        <header>
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/">
-                        <img src="/Assets/logo.svg" alt="Logo">
-                    </a>
+        <!-- Hero Section -->
+        <div id="hero">
+            <header>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/">
+                            <img src="/Assets/Navbar/logo.svg" alt="Logo">
+                        </a>
 
-                    <div class="nav-item-container">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#service">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pricing">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#blog">Blog</a>
-                            </li>
-                        </ul>
+                        <div class="nav-item-container">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#service">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pricing">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#blog">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-outline-secondary contact-btn"><a href="#contact-us">CONTACT</a></button>
                     </div>
-
-                    <button class="btn btn-outline-secondary contact-btn"><a href="#contact-us">CONTACT</a></button>
-                </div>
-            </nav>
+                </nav>
+            </header>
 
             <!-- Hero Content -->
             <div class="hero-content-container">
-                <div class="hero-img">
-                    <img src="/Assets/hero-image.png" alt="Hero Image">
+                <div class="hero-img-box">
+                    <img src="/Assets/hero-section/hero-image.png" id="hero-img" alt="Hero Image">
                 </div>
                 <div class="hero-content">
-                    <img src="Assets/Star.svg" id="star-svg" alt="Star SVG">
-                    <h5 class="txt-modern-studio">MODERN STUDIO</h5>
-                    <h1 class="txt-tag-line">We’re Help<br />To Build Your<br />Dream Project</h1>
-                    <small class="txt-desc">Agency provides a full service range including technical<br />skills, design, business understanding.</small>
-                    
+                    <img src="Assets/hero-section/Star.svg" id="star-svg" alt="Star SVG">
+                    <h5 class="txt-title">MODERN STUDIO</h5>
+                    <h1 class="txt-tagline">We’re Help<br />To Build Your<br />Dream Project</h1>
+                    <small class="hero-txt-desc">Agency provides a full service range including technical<br />skills, design, business understanding.</small>
+
                     <div class="cta-container">
                         <button id="how-we-work" class="cta-btn">HOW WE WORK</button>
                         <a href="#contact-us" class="contact-us">Contact Us</a>
                     </div>
+                </div>
 
-                    <!-- Testimonial Card -->
-                    <div class="testimonial-card">
-                        <img src="Assets/Bitmap.png" id="testi-img" alt="Meta Inc.">
-                        <div class="testi-body">
-                            <small class="testi-desc">"Put themselves in the merchant's shoes"</small>
-                            <span>&nbsp;Meta Inc.</span>
-                        </div>
+                <!-- Testimonial Card -->
+                <div class="testimonial-card">
+                    <img src="Assets/hero-section/Bitmap.png" id="testi-img" alt="Meta Inc.">
+                    <div class="testi-body">
+                        <small class="testi-desc">"Put themselves in the merchant's shoes"</small>
+                        <span>&nbsp;Meta Inc.</span>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+
+        <!-- About Section -->
+        <div id="about">
+            <div class="about-container">
+                <div class="brands-we-have-worked">
+                    <img src="Assets/about-section/clients-we-have-worked-with.svg" id="brands-we-worked" alt="Brand logo with we've worked">
+                </div>
+
+                <!-- About Content Container -->
+                <div class="about-content-container">
+                    <div class="about-img-box">
+                        <img src="Assets/about-section/about-img.png" id="about-img" alt="About Content Image">
+                    </div>
+                    <div class="about-content">
+                        <h5 class="txt-title about-txt-title">ABOUT</h5>
+                        <h2 class="about-txt-tagline">An Experience<br />Design Agency</h2>
+                        <span class="about-txt-normal">Provides a full service range</span>
+                        <small class="txt-desc">Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.</small>
+
+                        <div class="about-cta-container">
+                            <button id="about-us" class="cta-btn">ABOUT US</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Info Cards -->
+                <div class="more-info-card">
+                    <div class="info-card">
+                        <h3 class="card-title">42%</h3>
+                        <p class="card-text">Years of experience</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="card-title">73+</h3>
+                        <p class="card-text">Agency members</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="card-title">5.000</h3>
+                        <p class="card-body">Project complete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Script File -->

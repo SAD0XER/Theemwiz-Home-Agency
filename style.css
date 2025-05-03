@@ -1,40 +1,52 @@
 :root {
+    /* Measurement Units */
     --side-padding-space: 6rem;
     --width-50: 50%;
-    --text-light: white;
-    --text-light-gray: #FFFFFFA3;
-    --primary-dark-clr: #28293E;
-    --primary-light-clr: #EF6D58;
+    --lh-2rem: 2rem;
+
+    /* Colors */
+    --txt-light: white;
+    --txt-dark: #391400;
+    --txt-dark-gray: #391400A3;
+    --txt-light-gray: #FFFFFFA3;
+    --primary-dark-bg-clr: #28293E;
+    --primary-light-bg-clr: #FDF0E9;
+    --primary-brand-clr: #EF6D58;
+    --border-clr: #F3D1BF;
+
+    /* Fonts Related Style */
     --desc-fs: 0.85rem;
-    --desc-fc: var(var(--text-light-gray));
+    --desc-fc: var(var(--txt-light-gray));
+    --txt-fw-800: 800;
 }
 
 body {
     font-family: "Epilogue", sans-serif;
     font-optical-sizing: auto;
-    color: var(--text-light);
-
+    color: var(--txt-light);
 }
 
-header {
-    background: var(--primary-dark-clr);
+#hero {
+    background: var(--primary-dark-bg-clr);
 }
 
-/* Navbar */
+/* ==============================
+ Navbar Styling
+ ============================== */
 .navbar {
     padding: 0;
 }
 
 .container-fluid {
     padding: 0 var(--side-padding-space);
-    background: var(--primary-dark-clr);
+    background: var(--primary-dark-bg-clr);
 }
 
 .nav-link {
     display: block;
     padding: 1rem 3.5rem;
     font-size: small;
-    color: var(--text-light);
+    color: var(--txt-light);
     text-decoration: none;
     background: 0 0;
     border: 0;
@@ -45,7 +57,7 @@ header {
 }
 
 .contact-btn a {
-    color: var(--text-light);
+    color: var(--txt-light);
     font-size: small;
     font-weight: bold;
     text-decoration: none;
@@ -59,11 +71,11 @@ header {
     padding: 4rem var(--side-padding-space) 3rem;
 }
 
-.hero-img {
+.hero-img-box {
     width: var(--width-50);
 }
 
-.hero-img img {
+#hero-img {
     width: 90%;
 }
 
@@ -81,16 +93,16 @@ header {
     top: 8.6rem;
 }
 
-.txt-modern-studio {
+.txt-title {
     font-weight: 400;
     font-size: 0.9rem;
-    line-height: 2rem;
+    line-height: var(--lh-2rem);
     letter-spacing: 0.25rem;
-    color: var(--primary-light-clr);
+    color: var(--primary-brand-clr);
 }
 
-.txt-tag-line {
-    font-weight: 800;
+.txt-tagline {
+    font-weight: var(--txt-fw-800);
     font-size: 4rem;
     line-height: 5rem;
     letter-spacing: -0.1rem;
@@ -98,10 +110,10 @@ header {
     z-index: initial;
 }
 
-.txt-desc {
+.hero-txt-desc {
     font-size: var(--desc-fs);
-    line-height: 2rem;
-    color: var(--text-light-gray);
+    line-height: var(--lh-2rem);
+    color: var(--txt-light-gray);
     margin-bottom: 2rem;
 }
 
@@ -115,15 +127,15 @@ header {
     border-radius: 0.3rem;
     font-size: 0.75rem;
     font-weight: bold;
-    background-color: var(--primary-light-clr);
-    color: var(--text-light);
+    background-color: var(--primary-brand-clr);
+    color: var(--txt-light);
     padding: 0.75rem 1.25rem 0.5rem 1.25rem;
 }
 
 .contact-us {
     margin-left: 3rem;
     text-decoration: none;
-    color: var(--text-light);
+    color: var(--txt-light);
     font-size: small;
 }
 
@@ -131,6 +143,7 @@ header {
 .testimonial-card {
     display: inline-flex;
     align-items: center;
+    width: 100%;
 }
 
 #testi-img {
@@ -146,10 +159,123 @@ header {
 .testi-desc {
     font-size: var(--desc-fs);
     line-height: 1rem;
-    color: var(--text-light-gray);
+    color: var(--txt-light-gray);
     margin-bottom: 0.5rem;
 }
 
 .testi-body span {
     font-size: var(--desc-fs);
+}
+
+/* ==============================
+About Section Styling
+============================== */
+#about {
+    background: var(--primary-light-bg-clr);
+}
+
+.about-container {
+    padding: 0 var(--side-padding-space);
+}
+
+.brands-we-have-worked {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    border-bottom: 1px solid var(--border-clr);
+}
+
+#brands-we-worked {
+    width: 100%;
+}
+
+/* About Content Container Style */
+.about-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5rem 0 3rem;
+}
+
+.about-img-box {
+    width: var(--width-50);
+}
+
+#about-img {
+    width: 95%;
+}
+
+.about-content {
+    width: var(--width-50);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    color: var(--txt-dark);
+}
+
+.about-txt-title {
+    margin: 0;
+}
+
+.about-txt-tagline {
+    font-weight: var(--txt-fw-800);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.about-txt-normal {
+    line-height: var(--lh-2rem);
+    font-size: 1.25rem;
+}
+
+.about-txt-desc {
+    color: var(--txt-dark-gray);
+    line-height: var(--lh-2rem);
+}
+
+.about-cta-container {
+    margin: 0;
+}
+
+#about-us {
+    border-style: none;
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 900;
+    background-color: var(--txt-light);
+    color: var(--txt-dark);
+    padding: 1rem 2.25rem 0.75rem 2.25rem;
+}
+
+/* More Info Cats */
+.more-info-card {
+    display: inline-flex;
+    width: 100%;
+    color: var(--txt-dark);
+    border: 1px solid var(--border-clr);
+    border-radius: 0.375rem;
+    margin: 4rem 0;
+}
+
+.info-card:nth-child(2) {
+    border-left: 1px solid var(--border-clr);
+    border-right: 1px solid var(--border-clr);
+}
+
+.info-card {
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: var(--txt-fw-800);
+    line-height: 3rem;
+    margin: 0;
+}
+
+.card-body {
+    line-height: var(--lh-2rem);
+    margin: 0;
 }
