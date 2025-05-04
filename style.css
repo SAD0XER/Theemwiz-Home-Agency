@@ -66,6 +66,7 @@ body {
 
 .container-fluid {
     background: var(--primary-dark-bg-clr);
+    padding: 0 var(--side-padding-space);
 }
 
 .nav-link {
@@ -100,7 +101,7 @@ body {
 }
 
 #hero-img {
-    width: 90%;
+    width: 100%;
 }
 
 .hero-content {
@@ -294,7 +295,7 @@ How We Work Section Styling
 }
 
 .hww-content-container {
-    padding: 2rem 0;
+    padding: 2rem 0 6rem;
     border-bottom: 1px solid var(--border-clr);
 }
 
@@ -347,4 +348,51 @@ How We Work Section Styling
 .process-desc {
     font-weight: 700;
     margin: 0;
+}
+
+/* ==============================
+Video Reel Section Styling
+============================== */
+#video-reel {
+    background: var(--primary-light-bg-clr);
+    padding: 0 6rem 4rem;
+}
+
+.vr-container {
+    padding: 0;
+}
+
+.vr-content-container {
+    padding: 0;
+}
+
+.vr-img-box {
+    width: var(--width-50);
+}
+
+.overlayer {
+    position: absolute;
+}
+
+#play-icon {
+    position: relative;
+    transform: translate(11.5rem, 6rem);
+}
+
+#timestamp-icon {
+    position: relative;
+    transform: translate(-8rem, 14rem);
+}
+
+#vr-img {
+    width: 95%;
+}
+
+.vr-txt-title {
+    margin-bottom: 1rem;
+}
+
+.vr-txt-tagline {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
