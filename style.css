@@ -80,10 +80,7 @@ body {
 }
 
 .contact-btn {
-    padding: 0.5rem 1.5rem;
-}
-
-.contact-btn a {
+    padding: 0.8rem 2rem 0.65rem;
     color: var(--txt-light);
     font-size: small;
     font-weight: bold;
@@ -139,7 +136,7 @@ body {
     margin-bottom: 5rem;
 }
 
-#how-we-work-btn {
+.how-we-work-btn {
     border-style: none;
     border-radius: 0.3rem;
     font-size: 0.75rem;
