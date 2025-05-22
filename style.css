@@ -16,8 +16,11 @@
 
     /* Fonts Related Style */
     --desc-fs: 0.85rem;
+    /* description font size */
     --desc-fc: var(var(--txt-light-gray));
+    /* description font color */
     --txt-fw-800: 800;
+    /* description font weight */
 }
 
 /* ========== Custom Utility Clasees ========== */
@@ -40,10 +43,20 @@
     color: var(--primary-brand-clr);
 }
 
+.txt-tagline {
+    font-weight: var(--txt-fw-800);
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.1rem;
+    position: relative;
+    z-index: initial;
+}
+
 .txt-desc {
     line-height: 1.75rem;
     font-size: var(--desc-fs);
     margin-bottom: 2rem;
+    color: var(--txt-light-gray);
 }
 
 /* ========== Regular Styling ========== */
@@ -115,13 +128,8 @@ body {
     top: 8.6rem;
 }
 
-.txt-tagline {
-    font-weight: var(--txt-fw-800);
-    font-size: 4rem;
+.hero-txt-tagline {
     line-height: 5rem;
-    letter-spacing: -0.1rem;
-    position: relative;
-    z-index: initial;
 }
 
 .hero-txt-desc {
@@ -352,7 +360,7 @@ Video Reel Section Styling
 ============================== */
 #video-reel {
     background: var(--primary-light-bg-clr);
-    padding: 0 6rem 4rem;
+    padding: 0 6rem 3rem;
 }
 
 .vr-container {
@@ -392,4 +400,78 @@ Video Reel Section Styling
 .vr-txt-tagline {
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+/* ==============================
+Portfolio Section
+============================== */
+#portfolio {
+    background: var(--primary-dark-bg-clr);
+    padding: 0 6rem 4rem;
+}
+
+.portfolio-content-container {
+    padding: 5rem 0 6rem;
+}
+
+.portfolio-txt-title {
+    text-align: center;
+}
+
+.portfolio-txt-tagline {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.tab-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+.tab-card {
+    position: relative;
+    text-align: center;
+    color: var(--txt-light-gray);
+    cursor: pointer;
+    margin: 0 2rem;
+}
+
+.tab-count {
+    position: absolute;
+    font-size: 0.75rem;
+    color: var(--txt-light-gray);
+}
+
+.all-tab {
+    top: -0.3rem;
+    right: -0.8rem;
+}
+
+.design-tab {
+    top: -0.3rem;
+    right: -0.5rem;
+}
+
+.branding-tab {
+    top: -0.3rem;
+    right: -0.5rem;
+}
+
+.illustration-tab {
+    top: -0.3rem;
+    right: -0.5rem;
+}
+
+.motion-tab {
+    top: -0.3rem;
+    right: -0.3rem;
+}
+
+.tab-card:hover .tab-txt {
+    color: white;
+    transition: color 0.3s ease;
 }
