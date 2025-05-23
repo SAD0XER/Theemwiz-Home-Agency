@@ -15,12 +15,9 @@
     --border-clr: #F3D1BF;
 
     /* Fonts Related Style */
-    --desc-fs: 0.85rem;
-    /* description font size */
-    --desc-fc: var(var(--txt-light-gray));
-    /* description font color */
-    --txt-fw-800: 800;
-    /* description font weight */
+    --desc-fs: 0.85rem; /* description font size */
+    --desc-fc: var(var(--txt-light-gray)); /* description font color */
+    --txt-fw-800: 800; /* description font weight */
 }
 
 /* ========== Custom Utility Clasees ========== */
@@ -93,7 +90,7 @@ body {
 }
 
 .contact-btn {
-    padding: 0.8rem 2rem 0.65rem;
+    padding: 0.8rem 2rem 0.5rem;
     color: var(--txt-light);
     font-size: small;
     font-weight: bold;
@@ -375,7 +372,7 @@ Video Reel Section Styling
     width: var(--width-50);
 }
 
-.overlayer {
+.video-overlayer {
     position: absolute;
 }
 
@@ -423,6 +420,10 @@ Portfolio Section
     font-size: 3rem;
     margin: 0;
 }
+
+/* ==============================
+Portfolio Section: Categories Tab
+============================== */
 
 .tab-container {
     width: 100%;
@@ -474,4 +475,54 @@ Portfolio Section
 .tab-card:hover .tab-txt {
     color: white;
     transition: color 0.3s ease;
+}
+
+/* ==============================
+Portfolio Section: Portfolio Photos
+============================== */
+#photo-box {
+    padding: 5rem 0 6rem;
+}
+
+.rows {
+    display: flex;
+}
+
+.photo {
+    position: relative;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.photo > img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.portfolio-overlayer {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.tag {
+    background-color: var(--txt-light);
+    color: var(--txt-dark);
+    padding: 0.75rem 1rem 0.5rem;
+    border-radius: 5rem;
+    line-height: var(--lh-2rem);
+    font-size: 1rem;
+}
+
+.overlayer-title {
+    color: var(--txt-light);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+#explore-more-btn {
+    display: block;
+    margin: 2rem auto;
 }
