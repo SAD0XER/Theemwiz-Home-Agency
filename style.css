@@ -524,5 +524,78 @@ Portfolio Section: Portfolio Photos
 
 #explore-more-btn {
     display: block;
-    margin: 2rem auto;
+    margin: 2rem auto 10rem;
+}
+
+/* ==============================
+Portfolio Section: Banner
+============================== */
+.banner {
+    background-color: var(--primary-light-bg-clr);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.banner-content {
+    margin-left: 5rem;
+}
+
+#gift-star-img {
+    position: relative;
+    top: -5rem;
+}
+
+.banner-typography {
+    position: relative;
+    top: -4rem;
+}
+
+.banner-txt-tagline {
+    color: var(--txt-dark);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: var(--lh-2rem);
+    margin-bottom: 1rem;
+}
+
+.cta-container {
+    margin: unset;
+}
+
+.card-bg-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+
+#card-block-img {
+    width: 90%;
+}
+
+.cloud-bg-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+#cloud-bg-img {
+    position: relative;
+    right: 1.75rem;
+    top: -2.25rem;
+    width: 95%;
+}
+
+.poster-girl-box {
+    position: relative;
+    top: -22.8rem;
+    right: -2rem;
+}
+
+#poster-girl-img {
+    position: absolute;
+    width: 78%;
 }
