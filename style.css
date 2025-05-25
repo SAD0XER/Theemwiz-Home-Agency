@@ -5,7 +5,7 @@
     --lh-2rem: 2rem;
 
     /* Colors */
-    --txt-light: white;
+    --txt-light: #FFFFFF;
     --txt-dark: #391400;
     --txt-dark-gray: #391400A3;
     --txt-light-gray: #FFFFFFA3;
@@ -13,11 +13,15 @@
     --primary-light-bg-clr: #FDF0E9;
     --primary-brand-clr: #EF6D58;
     --border-clr: #F3D1BF;
+    --team-border-clr: #3A3C56;
 
     /* Fonts Related Style */
-    --desc-fs: 0.85rem; /* description font size */
-    --desc-fc: var(var(--txt-light-gray)); /* description font color */
-    --txt-fw-800: 800; /* description font weight */
+    --desc-fs: 0.85rem;
+    /* description font size */
+    --desc-fc: var(var(--txt-light-gray));
+    /* description font color */
+    --txt-fw-800: 800;
+    /* description font weight */
 }
 
 /* ========== Custom Utility Clasees ========== */
@@ -408,7 +412,7 @@ Portfolio Section
 }
 
 .portfolio-content-container {
-    padding: 5rem 0 6rem;
+    padding: 5rem 0 0;
 }
 
 .portfolio-txt-title {
@@ -598,4 +602,78 @@ Portfolio Section: Banner
 #poster-girl-img {
     position: absolute;
     width: 78%;
+}
+
+/* ==============================
+Portfolio Section: Our Team
+============================== */
+.two-division {
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: transparent;
+    border: unset;
+    width: 14.875rem;
+}
+
+.img-box {
+    height: 15rem;
+    background-color: transparent;
+    border: 0.1rem solid var(--team-border-clr);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#designer-img {
+    width: 75%;
+}
+
+#developer-img {
+    width: 95%;
+}
+
+#illustrator-img {
+    width: 80%;
+}
+
+#product-img {
+    width: 90%;
+}
+
+.carousel-arrow-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-title {
+    color: var(--txt-light);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.card-text {
+    color: var(--txt-light-gray);
+    font-size: 0.9rem;
+}
+
+.carousel-indicator-box {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
 }
