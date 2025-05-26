@@ -16,12 +16,9 @@
     --team-border-clr: #3A3C56;
 
     /* Fonts Related Style */
-    --desc-fs: 0.85rem;
-    /* description font size */
-    --desc-fc: var(var(--txt-light-gray));
-    /* description font color */
-    --txt-fw-800: 800;
-    /* description font weight */
+    --desc-fs: 0.85rem; /* description font size */
+    --desc-fc: var(var(--txt-light-gray)); /* description font color */
+    --txt-fw-800: 800; /* description font weight */
 }
 
 /* ========== Custom Utility Clasees ========== */
@@ -653,13 +650,13 @@ Portfolio Section: Our Team
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: end;
+
+    :hover {
+        cursor: pointer;
+    }
 }
 
-.card-body {
-    padding: 0;
-}
-
-.card-title {
+.ot-card-title {
     color: var(--txt-light);
     font-size: 1.25rem;
     font-weight: 700;
@@ -667,7 +664,7 @@ Portfolio Section: Our Team
     margin: 1rem 0 0.5rem;
 }
 
-.card-text {
+.ot-card-text {
     color: var(--txt-light-gray);
     font-size: 0.9rem;
 }
@@ -676,4 +673,43 @@ Portfolio Section: Our Team
     display: flex;
     justify-content: center;
     margin: 3rem 0;
+}
+
+/* ==============================
+Pricing Section
+============================== */
+#pricing {
+    background: var(--primary-light-bg-clr);
+}
+
+.pricing-content-box {
+    padding: 5rem 5rem 3rem;
+}
+
+.pricing-card {
+    color: var(--txt-dark);
+    display: flex;
+}
+
+.pricing-card-tagline {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    color: var(--txt-dark);
+}
+
+.offers-list {
+    list-style: none;
+}
+
+.offers-icon {
+    margin-right: 1rem;
+}
+
+.minus-icon-txt {
+    color: var(--txt-dark-gray);
+}
+
+.card2 {
+    background-color: var(--txt-light);
 }
