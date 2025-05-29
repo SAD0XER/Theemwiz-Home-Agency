@@ -778,3 +778,85 @@ Pricing Section
     font-size: 0.875rem;
     line-height: 2rem;
 }
+
+/* ==============================
+FAQ Section
+============================== */
+#faq {
+    background: var(--primary-light-bg-clr);
+}
+
+.faq-content-container {
+    padding: 5rem 8rem 5rem;
+}
+
+.faq-content {
+    width: var(--width-50);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    color: var(--txt-dark);
+}
+
+.faq-content-box {
+    padding-right: 6rem;
+
+}
+
+.faq-contact-us {
+    color: var(--txt-dark);
+    margin: 0;
+}
+
+.accordion {
+    border: 1px solid var(--border-clr);
+    border-radius: 0.375rem;
+}
+
+.accordion-button {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.accordion-body {
+    padding: 0 2.5rem 2rem;
+    font-size: var(--desc-fs);
+    line-height: 1.75rem;
+    color: var(--txt-dark-gray);
+}
+
+/* When FAQ is Not Opened. */
+.accordion-button.collapsed {
+    padding: 2.5rem;
+    background-color: var(--primary-light-bg-clr);
+    border: 1px solid var(--border-clr);
+}
+
+/* When FAQ is Opened. */
+.accordion-button:not(.collapsed) {
+    background-color: var(--txt-light);
+    padding: 3rem 2.5rem 1.5rem;
+    color: var(--txt-dark);
+    box-shadow: none;
+}
+
+/* Accordion Functionality Styling */
+.accordion-button::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2216%22%20fill%3D%22%23EF6D58%22/%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M15.0454%2021.14L10.2494%2015.658C9.68335%2015.013%2010.1434%2014%2011.0024%2014H20.5944C20.987%2013.9997%2021.3435%2014.2291%2021.5058%2014.5867C21.6681%2014.9442%2021.6061%2015.3637%2021.3474%2015.659L16.5514%2021.139C16.3615%2021.3563%2016.0869%2021.481%2015.7984%2021.481C15.5098%2021.481%2015.2352%2021.3563%2015.0454%2021.139V21.14Z%22%20fill%3D%22white%22/%3E%3C/svg%3E");
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.accordion-button.collapse::after {
+    transform: rotate(-180deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(360deg);
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2216%22%20fill%3D%22%23EF6D58%22/%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M15.247%2010.86L10.451%2016.341C9.88501%2016.988%2010.345%2018%2011.204%2018H20.796C21.1887%2018.0004%2021.5452%2017.7709%2021.7075%2017.4133C21.8697%2017.0558%2021.8078%2016.6364%2021.549%2016.341L16.753%2010.861C16.5631%2010.6437%2016.2886%2010.519%2016%2010.519C15.7114%2010.519%2015.4369%2010.6437%2015.247%2010.861V10.86Z%22%20fill%3D%22white%22/%3E%3C/svg%3E");
+}
