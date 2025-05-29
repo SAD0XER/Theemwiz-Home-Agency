@@ -25,7 +25,6 @@
 .two-division {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     padding: 5rem 0 3rem;
 }
 
@@ -859,4 +858,93 @@ FAQ Section
 .accordion-button:not(.collapsed)::after {
     transform: rotate(360deg);
     background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2216%22%20fill%3D%22%23EF6D58%22/%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M15.247%2010.86L10.451%2016.341C9.88501%2016.988%2010.345%2018%2011.204%2018H20.796C21.1887%2018.0004%2021.5452%2017.7709%2021.7075%2017.4133C21.8697%2017.0558%2021.8078%2016.6364%2021.549%2016.341L16.753%2010.861C16.5631%2010.6437%2016.2886%2010.519%2016%2010.519C15.7114%2010.519%2015.4369%2010.6437%2015.247%2010.861V10.86Z%22%20fill%3D%22white%22/%3E%3C/svg%3E");
+}
+
+/* ==============================
+Get In Touch Section
+============================== */
+#get-in-touch {
+    background-image: url(/Assets/get-in-touch-section/map.png);
+    padding: 5rem 8rem 0;
+    height: 100dvh;
+    background-size: cover;
+}
+
+.get-in-touch-container {
+    padding: 2.5rem 0 0;
+}
+
+.contact-form-box {
+    background-color: var(--txt-light);
+    padding: 2.5rem;
+    border-radius: 0.375rem;
+    width: 25.5rem;
+    height: 25rem;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 6L10 0H0L5 6Z' fill='%23EF6D58'/%3E%3C/svg%3E%0A");
+    border: 1px solid var(--border-clr);
+    border-radius: 0.375rem;
+    font-size: var(--desc-fs);
+    color: var(--txt-dark-gray);
+    padding: 0.5rem 0.75rem 0.25rem;
+    line-height: 1.5rem;
+}
+
+.form-title {
+    color: var(--txt-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.25rem 0.75rem 0;
+    border: 1px solid var(--border-clr);
+    border-radius: 0.375rem;
+    font-size: var(--desc-fs);
+    color: var(--txt-dark-gray);
+    line-height: 2rem;
+}
+
+input,
+select {
+    margin-bottom: 1.25rem;
+}
+
+#message {
+    margin-bottom: 1.5rem;
+}
+
+.submit-btn-box {
+    display: flex;
+    align-self: center;
+    justify-content: end;
+}
+
+.submit-btn-box button {
+    border: 1px solid var(--border-clr);
+    border-radius: 0.375rem;
+    background-color: var(--primary-brand-clr);
+    color: var(--txt-light);
+    font-size: var(--desc-fs);
+    font-weight: 900;
+    padding: 0.8rem 1.5rem 0.7rem;
+}
+
+.location-icon-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#location-pin-icon {
+    position: absolute;
+    left: 64%;
 }
