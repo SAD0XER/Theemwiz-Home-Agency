@@ -40,7 +40,7 @@
                                     <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#service">Service</a>
+                                    <a class="nav-link" href="#services">Service</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#pricing">Pricing</a>
@@ -51,7 +51,7 @@
                             </ul>
                         </div>
 
-                        <button class="btn btn-outline-secondary contact-btn"><span>CONTACT</span></button>
+                        <div class="contact-btn"><a href="#get-in-touch">CONTACT</a></div>
                     </div>
                 </nav>
             </header>
@@ -68,8 +68,8 @@
                     <small class="hero-txt-desc">Agency provides a full service range including technical<br>skills, design, business understanding.</small>
 
                     <div class="cta-container">
-                        <button class="how-we-work-btn">HOW WE WORK</button>
-                        <a href="#contact-us" class="contact-us">Contact Us</a>
+                        <div class="how-we-work-btn"><a href="#how-we-work">HOW WE WORK</a></div>
+                        <a href="#get-in-touch" class="contact-us">Contact Us</a>
                     </div>
                 </div>
 
@@ -239,7 +239,7 @@
                         </div>
                     </div>
 
-                    <button class="btn btn-outline-secondary contact-btn" id="explore-more-btn">EXPLORE MORE</button>
+                    <div class="btn btn-outline-secondary contact-btn" id="explore-more-btn"><span>EXPLORE MORE</span></div>
 
                     <!-- Banner Section -->
                     <section id="banner">
@@ -479,42 +479,40 @@
         <!-- Get In Touch Section -->
         <div id="get-in-touch">
             <div class="two-division get-in-touch-container">
-                <div class="get-in-touch-content">
-                    <div class="contact-form-box">
-                        <form action="https://theemwiz-home-agency.vercel.app/">
-                            <h4 class="form-title">Get in touch</h4>
-                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                <div class="contact-form-box">
+                    <form action="https://theemwiz-home-agency.vercel.app/">
+                        <h4 class="form-title">Get in touch</h4>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
 
-                            <select class="form-select" id="selectSubject" name="subject" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="general_inquiry">General Inquiry</option>
-                                <option value="technical_support">Technical Support</option>
-                                <option value="billing_question">Billing Question</option>
-                                <option value="partnership_opportunities">Partnership Opportunities</option>
-                                <option value="business">Business</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="other">Other</option>
-                            </select>
+                        <select class="form-select" id="selectSubject" name="subject" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="general_inquiry">General Inquiry</option>
+                            <option value="technical_support">Technical Support</option>
+                            <option value="billing_question">Billing Question</option>
+                            <option value="partnership_opportunities">Partnership Opportunities</option>
+                            <option value="business">Business</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
 
-                            <textarea id="message" name="message" rows="2" placeholder="Message" required></textarea>
-                            <div class="submit-btn-box"><button>SUBMIT NOW</button></div>
-                        </form>
-                    </div>
+                        <textarea id="message" name="message" rows="2" placeholder="Message" required></textarea>
+                        <div class="submit-btn-box"><button>SUBMIT NOW</button></div>
+                    </form>
                 </div>
-                <div class="get-in-touch-content location-icon-box">
+                <div class="location-icon-box">
                     <img src="Assets/get-in-touch-section/location-pin-icon.png" alt="Location Pin Icon" id="location-pin-icon">
                 </div>
             </div>
 
         </div>
 
-        <!-- Sitemap Section -->
+        <!-- Sitemap + Footer Section -->
         <div id="sitemap">
             <div class="sitemap-content">
-                <div class="sitemap-box sitemap-logo-box">
+                <div class="sitemap-box">
                     <h4 class="sitemap-logo">Agency</h4>
                 </div>
-                <div class="sitemap-box sitemap-menu-box">
+                <div class="sitemap-box">
                     <h4 class="txt-title">MENU</h4>
                     <div class="link-box">
                         <a href="#about">About</a>
@@ -523,7 +521,7 @@
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
-                <div class="sitemap-box sitemap-services-box">
+                <div class="sitemap-box">
                     <h4 class="txt-title">SERVICES</h4>
                     <div class="link-box">
                         <a href="#design">Design</a>
@@ -532,7 +530,7 @@
                         <a href="#see-more">See More</a>
                     </div>
                 </div>
-                <div class="sitemap-box sitemap-media-box">
+                <div class="sitemap-box">
                     <div class="media-box">
                         <a href="https://www.facebook.com/sadhguru" target="_blank" rel="noopener noreferrer">
                             <div class="sitemap-social-media-icon-box">
@@ -553,10 +551,11 @@
                 </div>
             </div>
 
+            <!-- Footer Section -->
             <footer>
                 <div class="footer-content">
                     <p class="copyright-text">Copyright © 2022 Laaqiq. All Rights Reserved.</p>
-                    <div class="terms-and-privacy-box">
+                    <div>
                         <a href="#privacy-policy">Privacy Policy</a>
                         <a href="#terms-of-service">Terms of Service</a>
                     </div>
